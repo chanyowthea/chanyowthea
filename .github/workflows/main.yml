@@ -2,6 +2,7 @@
     
     # Controls when the workflow will run
     on:
+      push:
       schedule:
         - cron: '0 23 * * *'    
       # Allows you to run this workflow manually from the Actions tab
@@ -29,6 +30,6 @@
             uses: JamesIves/github-pages-deploy-action@v4.2.5
             with:
               token: ${{ secrets.ACCESS_TOKEN }}
-              repository-name: humbornjo/humbornjo.github.io
-              BRANCH: master
+              repository-name: chanyowthea/chanyowthea
+              BRANCH: main
               FOLDER: public
